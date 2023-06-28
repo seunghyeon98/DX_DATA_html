@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!-- 바디에 색 입히기 -->
+  <body bgcolor="aqua" text="blue">
+    <h1 class="redarea">hi</h1>
+    <p class="redarea">hello</p>
+
+    <!-- 태그와 스크립트는 순서대로 짜여 있어야 함 -->
+    <!-- id tag -->
+    <p id="adam">두번째 단락</p>
+    <button id="btn">클릭</button>
+    <script>
+      document.getElementById("btn").addEventListener("click", function (e) {
+        document.getElementById("adam").innerHTML = "클릭됨";
+      });
+    </script>
+
+    <!-- 스타일은 아무대나 적어도 된다 -->
+    <style>
+      .redarea {
+        color: red;
+      }
+    </style>
+    <br />
+    <!-- 절대경로를 이용한 이미지 -->
+    <img
+      src="https://newsimg-hams.hankookilbo.com/2022/12/29/d560195b-3e85-4f21-9d40-1758e1fac828.jpg"
+      width="200"
+      ,height="200"
+    />
+
+    <!-- 이미지를 다운 받고, 다운받은 이미지의 폴더를 지정해서, 저장해논 이미지 올리기 -->
+    <img src="./html/img/img_temp.jpg" width="200" ,height="200" />
+  </body>
+</html>
